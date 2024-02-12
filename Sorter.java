@@ -1,6 +1,20 @@
 public class Sorter {
     public static void main(String[] args) {
         System.out.println("Hello");
+        int[] unsortedArray = {64, 25, 12, 22, 11};
+
+        System.out.println("Unsorted Array:");
+        for (int value : unsortedArray) {
+            System.out.print(value + " ");
+        }
+
+        selectionSort(unsortedArray);
+
+        System.out.println("\nSorted Array:");
+        for (int value : unsortedArray) {
+            System.out.print(value + " ");
+        }
+
     }
     public static void selectionSort(int[] arr) {
         int n = arr.length;
