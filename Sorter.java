@@ -2,7 +2,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Sorter {
-    public static void main(String[] args) {
+    /**
+     * @param args
+     * @param is TODO
+     */
+    public static void main(String[] args, int[] is) {
 
         System.out.println("Hello");
         int[] unsortedArray = {64, 25, 12, 22, 11};
@@ -12,7 +16,7 @@ public class Sorter {
             System.out.print(value + " ");
         }
 
-        selectionSort(unsortedArray);
+        selectionSort(is);
 
         System.out.println("\nSorted Array:");
         for (int value : unsortedArray) {
