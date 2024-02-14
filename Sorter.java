@@ -4,9 +4,8 @@ import java.util.Arrays;
 public class Sorter {
     /**
      * @param args
-     * @param is TODO
      */
-    public static void main(String[] args, int[] is) {
+    public static void main(String[] args) {
 
         System.out.println("Hello");
         int[] unsortedArray = {64, 25, 12, 22, 11};
@@ -16,7 +15,7 @@ public class Sorter {
             System.out.print(value + " ");
         }
 
-        selectionSort(is);
+        selectionSort(unsortedArray);
 
         System.out.println("\nSorted Array:");
         for (int value : unsortedArray) {
